@@ -1,0 +1,76 @@
+<!DOCTYPE html> <html lang="en">
+  <meta charset= "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> responsive card layout</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+  <body>
+ 
+   <section class="header">
+         
+     <nav>
+         <a href="EuropaPark.html"><img src="fun3.png" width="300"></a>
+         <div class="nav-links" id="navLinks">  
+             <i class="fa fa-close" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="Acceuil.html">Acceuil</a></li>
+                 <li><a href="FerrariLand.html">Ferrari Land</a></li>
+                 <li><a href="CedarPoint.html">Cedar Point</a></li>
+                 <li><a href="EuropaPark.html">Europa Park</a></li>
+          
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+     <header>
+        <div class="slider">
+            <div class="slide" style="background-image: url('Cedar\ Point\ img.jpg');">
+                <a href="#target-4" class="arrow arrow-prev"></a>
+                <a href="#target-2" class="arrow arrow-next"></a>
+                <h1>Cedar Point</h1>
+                
+                <button>
+                    <a href="CedarPoint.html" >Visiter</a>
+                </button>
+            </div>
+     
+            <div class="slide" style="background-image: url('Ferrari_land_vue_d\'ensemble.jpg');">
+                <a href="#target-1" class="arrow arrow-prev"></a>
+                <a href="#target-3" class="arrow arrow-next"></a>
+                <h1>Ferrari Land</h1>
+
+                <button>
+                    <a href="FerrariLand.html" >Visiter</a>
+                </button>
+            </div>
+         
+            <div class="slide" style="background-image: url('Saisonniers-dans-les-parcs-d-attractions-comment-Europa-Park-seduit-les-travailleurs-frontaliers.jpg');">
+                <a href="#target-2" class="arrow arrow-prev"></a>
+                <a href="#target-4" class="arrow arrow-next"></a>
+                <h1>Europa Park</h1>
+                
+                <button>
+                    <a href="EuropaPark.html" >Visiter</a>
+                </button>
+            </div>
+        
+        
+    
+    </header>
+     
+    <!----JavaScript menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+ </body> 
+ </html>

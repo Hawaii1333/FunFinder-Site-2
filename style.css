@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding:0 ;
+  font-family: 'Poppins', sans-serif;
+
+  
+}
+
+.header{
+  background-color: rgba(30, 30, 30, 0.886);
+  min-height: 100vh;
+  width: 100%; 
+  background-image: linear-gradient(rgba(2, 2, 2, 0.865),#4f4f4f1e),url(Saisonniers-dans-les-parcs-d-attractions-comment-Europa-Park-seduit-les-travailleurs-frontaliers.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+nav{
+  display: flex;
+  padding:  1%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 95px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 18px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: px;
+  background: #ededed;
+  display: block;
+  margin: auto;
+  transition: .5s;    
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+nav .fa{
+  display: none;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin: 20px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+
+
+
+@media(max-width: 700px)
+{
+ .nav-links ul li
+  {
+      display: block;
+      
+  }
+  .nav-links
+  {
+      position: fixed;
+      background: #020202df;
+      height: 200vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 0.5s;
+  }
+  .nav-links ul{
+      padding: 40px;
+  }
+  nav .fa{
+      display: block;
+      color: #fff;
+      margin: 2px;
+      font-size: 22px;
+      cursor: pointer; 
+  }
+  .text-box h1{
+      font-size: 20px;
+  }
+}
+.slider {
+
+  width: 300%;
+  height: 300;
+
+  display: flex;
+  animation: slide 15s infinite;
+  object-fit: cover;
+}
+
+
+.slide {
+  width: 100%;
+  height: 830px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+
+}
+
+.slide h1 {
+  color: rgb(255, 255, 255); 
+  font-size: 70px;
+}
+
+.slide button {
+  margin-top: 10px;
+  bottom: -127px;
+  align-items: center;
+  appearance: none;
+  background-color: #151515c2;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 29px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  33% {margin-left: -100%;}
+  53% {margin-left: -100%;}
+  67% {margin-left: -200%;}
+  80% {margin-left: -200%;}
+
+  
+}
+
+
+.slide a{
+  color: #f5f1f1;
+  
+}
+
+*{
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: beige;
+}
+
+.card-container{
+  display: flex;
+  justify-content:center ;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card{
+  width: 100px;
+  border-radius: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
